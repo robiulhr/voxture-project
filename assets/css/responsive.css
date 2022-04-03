@@ -1,0 +1,51 @@
+@media (max-width: 1400px) {
+    .login-signup-link {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 1200px) {
+    /* -------- login page ----- */
+    .upper-nav-logo {
+        margin-left: 0rem;
+    }
+    .login-form-section {
+        width: 95%;
+        height: 90%;
+    }
+    .login-signup-link {
+        margin-top: 20px;
+    }
+    /* ----------- request success page ------- */
+    .request-success-form-section {
+        width: 90%;
+    }
+    /* footer */
+    .footer-text {
+        padding-right: 0px;
+    }
+}
+
+@media (max-width: 992px) {
+    /* ----------- request success page ------- */
+    .req-success-content {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* ----------- request success page ------- */
+    .req-success-content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    p,
+    a {
+        font-size: 12px;
+    }
+    h4 {
+        font-size: 14px;
+    }
+}
