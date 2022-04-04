@@ -8,8 +8,8 @@
         padding-right: 30px;
     }
     .special-navbar a:not(.navbar-brand)::after {
-        width: 110%;
-        left: -5%;
+        width: 100%;
+        left: 0%;
         background-color: var(--blue-1);
     }
 }
@@ -36,13 +36,17 @@
         padding-right: 10px;
     }
     .special-navbar a:not(.navbar-brand)::after {
-        width: 110%;
-        left: -5%;
+        width: 140%;
+        left: -20%;
         background-color: var(--blue-1);
     }
     .required-action-text,
     .required-action-sec {
-        max-height: 250px;
+        max-height: 30vh;
+    }
+    /* ------------ requset submitted ------------- */
+    .req-submitted {
+        min-height: 30vh;
     }
     /* footer */
     .footer-text {
@@ -58,6 +62,15 @@
     /* ----------- on hold request page ----------- */
     .on-hold-req-form-section {
         width: 90%;
+    }
+    .special-navbar a:not(.navbar-brand)::after {
+        width: 120%;
+        left: -10%;
+        background-color: var(--blue-1);
+    }
+    /* --------------- loan form page -------------- */
+    .overflow-loan-form {
+        overflow: scroll;
     }
 }
 

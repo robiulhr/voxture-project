@@ -68,6 +68,10 @@ input {
     font-size: 12px;
 }
 
+input[type="checkbox"]:checked {
+    background-color: var(--green-1);
+}
+
 textarea {
     resize: none;
 }
@@ -149,12 +153,24 @@ span {
     padding-right: 60px;
 }
 
+.min-h-200 {
+    min-height: 200px;
+}
+
 .max-h-100 {
     max-height: 100px;
 }
 
 .max-h-120 {
     max-height: 120px;
+}
+
+.max-h-200 {
+    max-height: 200px;
+}
+
+.max-h-250 {
+    max-height: 250px;
 }
 
 .max-h-300 {
@@ -291,23 +307,22 @@ span {
 }
 
 .special-navbar a:not(.navbar-brand)::after {
-    width: 125%;
-    left: -10%;
+    width: 110%;
+    left: -5%;
     background-color: var(--blue-1);
 }
 
+.special-navbar a.active::after,
+.bottom-nav-link a.active,
 .special-navbar a:hover,
 .bottom-nav-link a:hover {
     color: var(--green-1) !important;
 }
 
+.special-navbar a.active::after,
+.bottom-nav-link a.active::after,
 .special-navbar a:hover::after,
 .bottom-nav-link a:hover::after {
-    visibility: visible;
-    opacity: 1;
-}
-
-.special-navbar a.active::after {
     visibility: visible;
     opacity: 1;
 }
@@ -372,10 +387,6 @@ span {
     height: 15%;
 }
 
-.on-hold-req-checkbox:checked {
-    background-color: var(--green-1);
-}
-
 .on-hold-req-checkbox {
     width: 20px;
     height: 20px;
@@ -389,3 +400,8 @@ span {
     border-bottom: 10px solid transparent;
     border-left: 20px solid var(--black-2);
 }
+
+
+/* ----------- request submitted ------------- */
+
+.req-submitted {}
