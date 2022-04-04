@@ -52,6 +52,10 @@
     .footer-text {
         padding-right: 0px;
     }
+    /* ---------- submit page ---------- */
+    .submit-form-section {
+        width: 90%;
+    }
 }
 
 @media (max-width: 992px) {
@@ -92,6 +96,13 @@
     }
     .contact-details {
         max-width: 90%;
+    }
+    /* -------- product page ------------ */
+    .product-form-section {
+        overflow: scroll;
+    }
+    .solve-outgoing-btn {
+        margin-top: 0px;
     }
 }
 

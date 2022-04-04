@@ -359,6 +359,10 @@ span {
     height: 90%;
 }
 
+.solve-outgoing-btn {
+    margin-top: -60px;
+}
+
 
 /* ----------- request-success page ----------- */
 
@@ -404,4 +408,10 @@ span {
 
 /* ----------- request submitted ------------- */
 
-.req-submitted {}
+
+/* ---------- submit page ---------- */
+
+.submit-form-section {
+    width: 80%;
+    height: 95%;
+}
