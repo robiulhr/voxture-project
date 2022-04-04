@@ -1,19 +1,28 @@
 :root {
     --green-1: #8cebaf;
     --black-1: #000;
+    --black-2: rgb(33, 37, 41);
+    --black-3: rgb(60, 62, 63);
     --blue-1: #00ffff;
     --orange-1: #df4a16;
     --white-1: rgba(255, 255, 255, 0.637);
     --transition-primary: all 0.6s ease-in-out;
+    --shadow-1: 1px 1px 1px 1px var(--black-1)
 }
 
 
-/* global css  */
+/*=========== global css==========  */
 
 * {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+}
+
+*:checked,
+*:focus {
+    border: none !important;
+    box-shadow: none !important;
 }
 
 body {
@@ -57,6 +66,10 @@ label {
 
 input {
     font-size: 12px;
+}
+
+textarea {
+    resize: none;
 }
 
 span {
@@ -136,6 +149,46 @@ span {
     padding-right: 60px;
 }
 
+.max-h-100 {
+    max-height: 100px;
+}
+
+.max-h-120 {
+    max-height: 120px;
+}
+
+.max-h-300 {
+    max-height: 300px;
+}
+
+.max-h-350 {
+    max-height: 350px;
+}
+
+.max-w-100 {
+    max-width: 100px;
+}
+
+.max-w-120 {
+    max-width: 120px;
+}
+
+.max-w-150 {
+    max-width: 150px;
+}
+
+.max-w-200 {
+    max-width: 200px;
+}
+
+.max-w-250 {
+    max-width: 250px;
+}
+
+.overflow-x-hidden {
+    overflow-x: hidden;
+}
+
 .green1-bg {
     background-color: var(--green-1);
 }
@@ -144,8 +197,53 @@ span {
     color: var(--green-1);
 }
 
+.green1-border {
+    border: 1px solid var(--green-1);
+}
+
+.black2-text {
+    color: var(--black-2);
+}
+
+.black2-border {
+    border: 1px solid var(--black-2);
+}
+
+.white1-text {
+    color: var(--white-1);
+}
+
 .orange-text {
     color: var(--orange-1);
+}
+
+
+/* ------- scroll bar ------------ */
+
+::-webkit-scrollbar {
+    width: 10px;
+    padding: 3px;
+    background-color: var(--black-2);
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 0%;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--black-2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--black-3);
+    border-radius: 10px;
+    height: 50px;
+    margin: 5px;
+    box-shadow: var(--shadow-1);
+}
+
+::-webkit-scrollbar-corner {
+    background: var(--black-2);
 }
 
 
@@ -234,6 +332,7 @@ span {
 
 /* ------- product page -------- */
 
+.on-hold-req-wrapper main,
 .product-wrapper main {
     display: flex;
     align-items: center;
@@ -246,7 +345,7 @@ span {
 }
 
 
-/* ----------- request-success ----------- */
+/* ----------- request-success page ----------- */
 
 .request-success-form-section {
     width: 60%;
@@ -255,4 +354,38 @@ span {
 
 .req-success-content {
     width: 50%;
+}
+
+
+/* ----------- on hold request page ------------- */
+
+.on-hold-req-form-section {
+    width: 80%;
+    height: 95%;
+}
+
+.on-hold-req-wrapper main {
+    height: 80%;
+}
+
+.on-hold-req-wrapper footer {
+    height: 15%;
+}
+
+.on-hold-req-checkbox:checked {
+    background-color: var(--green-1);
+}
+
+.on-hold-req-checkbox {
+    width: 20px;
+    height: 20px;
+    outline: none;
+}
+
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 20px solid var(--black-2);
 }

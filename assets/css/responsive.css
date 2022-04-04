@@ -2,6 +2,16 @@
     .login-signup-link {
         margin-top: 30px;
     }
+    /* ----------- on hold request page ----------- */
+    .special-navbar a {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .special-navbar a:not(.navbar-brand)::after {
+        width: 110%;
+        left: -5%;
+        background-color: var(--blue-1);
+    }
 }
 
 @media (max-width: 1200px) {
@@ -20,6 +30,20 @@
     .request-success-form-section {
         width: 90%;
     }
+    /* ----------- on hold request page ----------- */
+    .special-navbar a {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .special-navbar a:not(.navbar-brand)::after {
+        width: 110%;
+        left: -5%;
+        background-color: var(--blue-1);
+    }
+    .required-action-text,
+    .required-action-sec {
+        max-height: 250px;
+    }
     /* footer */
     .footer-text {
         padding-right: 0px;
@@ -31,12 +55,30 @@
     .req-success-content {
         width: 70%;
     }
+    /* ----------- on hold request page ----------- */
+    .on-hold-req-form-section {
+        width: 90%;
+    }
 }
 
 @media (max-width: 768px) {
     /* ----------- request success page ------- */
     .req-success-content {
         width: 90%;
+    }
+    /* ----------- on hold request page ----------- */
+    .on-hold-req {
+        height: auto;
+        overflow: scroll;
+    }
+    .on-hold-req-wrapper {
+        overflow-y: scroll;
+    }
+    .on-hold-req-form-section {
+        width: 100%;
+    }
+    .contact-details {
+        max-width: 90%;
     }
 }
 
